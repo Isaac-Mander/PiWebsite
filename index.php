@@ -1,3 +1,25 @@
+<?php
+include("dbconnect.php");
+
+#Query Database for blog titles
+$blog_sql = "SELECT title,img,url FROM mainsite.blogs";
+$blog_qry = mysqli_query($dbconnect, $blog_sql);
+$blog_results = mysqli_fetch_assoc($blog_qry);
+
+$i = 0;
+
+
+
+do{
+  $blog_titles[$i] = $blog_results['title'];
+  $blog_imgs[$i] = $blog_results['img'];
+  $blog_urls[$i] = $blog_results['url'];
+  $i += 1;
+} while ($blog_results = mysqli_fetch_assoc($blog_qry));
+?>
+
+
+
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
@@ -16,11 +38,22 @@
     <a href="http://192.168.1.20/phpmyadmin/">phpMyAdmin</a>
     </div>
 
+    
+    <div class="Blogs">
+    <h1>Top Blogs</h1>
 
-    <div class="Statistics">
 
-    <div class="Box"><img src="" alt=""></div>
+    <div class="Blogs_grid">
+    <div class="Blog_link"><h3><?php echo $blog_titles[0]?></h3>
+    <a href="http://192.168.1.20/PiWebsite/blogs?blog=<?php echo $blog_urls[0] ?>"><img src=<?php echo $blog_imgs[0]?> alt=<?php echo $blog_imgs[0]?>></a></div>
 
+    <div class="Blog_link"><h3><?php echo $blog_titles[1]?></h3>
+    <a href="http://192.168.1.20/PiWebsite/blogs?blog=<?php echo $blog_urls[1] ?>"><img src=<?php echo $blog_imgs[1]?> alt=<?php echo $blog_imgs[1]?>></a></div>
+
+    <div class="Blog_link"><h3><?php echo $blog_titles[2]?></h3>
+    <a href="http://192.168.1.20/PiWebsite/blogs?blog=<?php echo $blog_urls[2] ?>"><img src=<?php echo $blog_imgs[2]?> alt=<?php echo $blog_imgs[2]?>></a></div>
+    
+    </div>
 
     </div>
 
