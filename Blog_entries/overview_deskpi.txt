@@ -1,0 +1,13 @@
+This is a page describes what my DeskPi project is and acts as an up-to-date list of the features I have added. 
+Current Features:
+1. Under Desk Lighting
+2. Single plant watering capability
+
+DeskPi is probably not the best name for the project, originally, I intended to use an old raspberry pi 3 I had lying around to add some automation to my desk. My broher had a cheap 12V RBG strip he wasn't using, so I put that under my desk. Combined with a relay and Adafruit IO (great service) I was able to control the RGB remotly from the adafruit website. This was great fun to work on so I just kept expanding the scope of the DeskPi project significantly.
+
+The general idea is made up of multiple seperate raspberry pi's all sending data to a main server (I use the pi under my desk). Each of these pi nodes will add some form of automation to my home. For example I have a node that measures the water level of a plant and waters it when needed. As arduino is much better at interfacing with sensors and relays than raspberry pi some nodes will have a arduino sending data via serial through a usb connector. Each node can automate almost any task around my house, from music to lighting.
+
+Nodes I wish to add in the future:
+1. Multi plant watering node
+2. Handheld control panel and music player (using a touch capable screen)
+3. Office lighting control node (could use desk pi)

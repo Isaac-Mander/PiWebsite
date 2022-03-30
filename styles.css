@@ -4,6 +4,7 @@ body {
 
 .container {
     color: white;
+    font-family: Arial, sans-serif;
 }
 
 
@@ -62,4 +63,27 @@ body {
 {
     max-width: 100%;
     height: auto;
+}
+
+
+
+
+.blog_uni
+{
+    text-align: center;
+}
+
+
+.blog_high img
+{
+    width: 50%;
+    height: auto
+}
+
+.blog_low
+{
+    text-align: left;
+    margin: 40px;
+    margin-top: 80px;
+    font-size: large;
 }
