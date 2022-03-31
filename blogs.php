@@ -38,7 +38,6 @@ $blog_file = $blog_results['file_name'];
         while(!feof($file)) {
             ?><p><?php echo fgets($file). ""; ?></p><?php
         }
-
         ?>
     </div>
     </div>
