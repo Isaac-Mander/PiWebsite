@@ -33,7 +33,7 @@ $blog_file = $blog_results['file_name'];
 
     <div class="blog_low">
         <?php
-        $file = fopen("$blog_file", "r");
+        $file = fopen("Blog_entries\ $blog_file", "r");
         // Reading a .txt file line by line
         while(!feof($file)) {
             ?><p><?php echo fgets($file). ""; ?></p><?php
