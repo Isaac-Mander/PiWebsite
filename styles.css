@@ -78,19 +78,22 @@ body {
 .blog_uni
 {
     text-align: center;
+    background-color: rgba(255, 255, 255, 0.15);
+    margin: 40px;
+    padding: 40px;
 }
 
 
 .blog_high img
 {
     width: 50%;
-    height: auto
+    height: auto;
+    margin-bottom: 60px;
 }
 
 .blog_low
 {
     text-align: left;
-    margin: 40px;
-    margin-top: 80px;
+    
     font-size: large;
 }
