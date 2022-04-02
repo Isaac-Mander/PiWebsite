@@ -51,7 +51,7 @@ body {
 {
     margin-top: 20px;
     padding: 10px;
-    background-color: rgba(255, 255, 255, 0.2);
+    background-color: rgba(255, 255, 255, 0.15);
     display: grid;
     grid-template-columns: 	repeat(auto-fit, minmax(400px, 1fr));
     grid-template-rows: 	repeat(auto-fit, minmax(300px, 1fr));
@@ -60,6 +60,7 @@ body {
 .Blog_link
 {
     margin: 10px;
+    background-color: rgba(255, 255, 255, 0.2);
 }
 .Blog_link img
 {
@@ -67,10 +68,10 @@ body {
     max-height: 200px;
     height: auto;
 }
-.Blogs h3 span
-{
 
-}
+
+
+
 
 
 

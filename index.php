@@ -31,7 +31,7 @@ do{
   <body>
   <div class="container">
 
-    <?php include("navbar.html"); ?>
+    <?php include("navbar.php"); ?>
     <div class="Blogs">
     <h1>Top Blogs</h1>
 

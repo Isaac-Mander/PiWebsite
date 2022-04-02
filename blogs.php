@@ -24,6 +24,8 @@ $blog_file = $blog_results['file_name'];
 </head>
 
 <body>
+    <?php include("navbar.php"); ?>
+
     <div class="container">
     <div class='blog_uni'>
     <div class="blog_high">
