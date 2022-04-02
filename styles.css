@@ -1,6 +1,12 @@
+:root{
+    --clr-grad-700: linear-gradient(to right, #040a2f, #4c1583);
+
+}
+
+
 body {
 	background-color: rgb(8, 8, 34);
-    background: linear-gradient(to right, #040a2f, #4c1583);
+    background: var(--clr-grad-700);
 	}
 
 .container {
@@ -53,7 +59,7 @@ body {
     padding: 10px;
     background-color: rgba(255, 255, 255, 0.15);
     display: grid;
-    grid-template-columns: 	repeat(auto-fit, minmax(400px, 1fr));
+    grid-template-columns: 	repeat(auto-fit, minmax(450px, 1fr));
     grid-template-rows: 	repeat(auto-fit, minmax(300px, 1fr));
     
 }
