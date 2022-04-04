@@ -1,15 +1,22 @@
 :root{
     --clr-grad-700: linear-gradient(to right, #040a2f, #4c1583);
 
+    --clr-tran-10: rgba(255, 255, 255, 0.1);
+    --clr-tran-15: rgba(255, 255, 255, 0.15);
+    --clr-tran-20: rgba(255, 255, 255, 0.20);
+    --clr-tran-25: rgba(255, 255, 255, 0.25);
+    --clr-tran-30: rgba(255, 255, 255, 0.30);
 }
 
 
-body {
+body
+{
 	background-color: rgb(8, 8, 34);
     background: var(--clr-grad-700);
-	}
+}
 
-.container {
+.container 
+{
     color: white;
     font-family: Arial, sans-serif;
 }
@@ -19,14 +26,15 @@ body {
 {
     display: grid;
     grid-template-columns: repeat(5,1fr);
-    background-color: #555;
+    
     overflow: auto;
     
     list-style-type: none;
     margin: 0;
     padding: 0;
-    background-color: rgb(150, 150, 150);
+    background-color: var(--clr-tran-15);
     text-align: center;
+    
 }
 .Navbar a
 {
@@ -36,15 +44,11 @@ body {
     text-decoration: none;
     font-size: 36px;
     text-align: center;
-    border-left: 5px solid rgb(87, 87, 87);
-    border-right: 5px solid rgb(87, 87, 87);
-    border-bottom: 5px solid rgb(87, 87, 87);
-    border-top: 5px solid rgb(87, 87, 87);
 }
 
 .Navbar a:hover
 {
-    background-color: rgb(54, 54, 54);
+    background-color: var(--clr-tran-20);
 }
 
 .Blogs
@@ -57,7 +61,7 @@ body {
 {
     margin-top: 20px;
     padding: 10px;
-    background-color: rgba(255, 255, 255, 0.15);
+    background-color: var(--clr-tran-15);
     display: grid;
     grid-template-columns: 	repeat(auto-fit, minmax(450px, 1fr));
     grid-template-rows: 	repeat(auto-fit, minmax(300px, 1fr));
@@ -66,7 +70,11 @@ body {
 .Blog_link
 {
     margin: 10px;
-    background-color: rgba(255, 255, 255, 0.2);
+    background-color: var(--clr-tran-20);
+}
+.Blogs_grid div:hover
+{
+    background-color: var(--clr-tran-30);
 }
 .Blog_link img
 {
@@ -81,10 +89,12 @@ body {
 
 
 
+
+
 .blog_uni
 {
     text-align: center;
-    background-color: rgba(255, 255, 255, 0.15);
+    background-color: var(--clr-tran-15);
     margin: 40px;
     padding: 40px;
 }
