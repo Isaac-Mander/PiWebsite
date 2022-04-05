@@ -32,7 +32,7 @@ else $error_msg = "";
     <label for="PASSWORD">Password:</label><br>
     <input type="text" id="PASSWORD" name="PASSWORD" value=""><br><br>
     <input type="submit" value="Submit">
-    </form> 
+    </form>
     <h1><?php echo $error_msg ?></h1>
     </div>
 
