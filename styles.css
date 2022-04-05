@@ -15,6 +15,18 @@ body
     background: var(--clr-grad-700);
 }
 
+/* General use css func */
+.split
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    text-align: center;
+}
+
+
+
+
 .container 
 {
     color: white;

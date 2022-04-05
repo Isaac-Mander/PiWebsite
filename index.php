@@ -3,7 +3,7 @@ include("dbconnect.php");
 
 #Query Database for blog titles
 $blog_sql = "SELECT title,img,link FROM blogs";
-$blog_qry = mysqli_query($blog_db, $blog_sql);
+$blog_qry = mysqli_query($heroku_db, $blog_sql);
 $blog_results = mysqli_fetch_assoc($blog_qry);
 
 $i = 0;
