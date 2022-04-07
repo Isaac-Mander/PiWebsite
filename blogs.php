@@ -5,7 +5,7 @@ include("dbconnect.php");
 $blog_id = $_GET['blog'];
 
 $blog_sql = "SELECT title,img,file_name FROM blogs WHERE link = '$blog_id';";
-$blog_qry = mysqli_query($blog_db, $blog_sql);
+$blog_qry = mysqli_query($heroku_db, $blog_sql);
 $blog_results = mysqli_fetch_assoc($blog_qry);
 
 
