@@ -4,11 +4,15 @@ include("dbconnect.php");
 $username = $_GET['USERNAME'];
 $password = $_GET['PASSWORD'];
 $hashed_password = sha1($password,False);
+echo $hashed_password;
 $login_sql = "INSERT INTO users (username,password,status) VALUES ('$username','$hashed_password',NULL)";
 $login_qry = mysqli_query($heroku_db, $login_sql);
 
 
+//After adding user reset id counter
 
+$login_sql = "ALTER TABLE users AUTO_INCREMENT = 1";
+$login_qry = mysqli_query($heroku_db, $login_sql);
 ?>
 <!DOCTYPE html>
 <html lang="en">
