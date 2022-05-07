@@ -2,7 +2,7 @@
 include("dbconnect.php");
 
 #Query Database for blog titles
-$blog_sql = "SELECT title,img,link FROM blogs";
+$blog_sql = "SELECT title,img,link FROM blogs ORDER BY views DESC";
 $blog_qry = mysqli_query($heroku_db, $blog_sql);
 $blog_results = mysqli_fetch_assoc($blog_qry);
 
@@ -33,7 +33,7 @@ do{
 
     <?php include("navbar.php"); ?>
     <div class="Blogs">
-    <h1>Top Blogs</h1>
+    <h1>Popular Blogs</h1>
 
    
     <div class="Blogs_grid">
@@ -53,8 +53,6 @@ do{
     <div class="Blog_link"><span><h3><?php echo $blog_titles[4]?></span></h3>
     <a href="blogs.php?blog=<?php echo $blog_urls[4] ?>"><img src=<?php echo "blog_img/$blog_imgs[4]"?> alt=<?php echo $blog_imgs[4]?>></a></div>
 
-  
-    
     </div>
 
     </div>

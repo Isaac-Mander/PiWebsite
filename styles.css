@@ -27,6 +27,10 @@ body
     grid-template-rows: auto;
     text-align: center;
 }
+.left_align
+{
+    text-align: left;
+}
 
 .profile_grid
 {
