@@ -31,12 +31,13 @@ $blog_file = $blog_results['file_name'];
     <div class='blog_uni'>
     <div class="blog_high">
     <h1><?php echo $blog_title; ?></h1>
-    <img src=<?php echo $blog_img ?>>
+    <img src=<?php echo "blog_img/$blog_img"; ?>>
     </div>
 
     <div class="blog_low">
         <?php
-        $file = fopen("$blog_file", "r");
+        echo $blog_file;
+        $file = fopen("blog_text/$blog_file", "r");
         // Reading a .txt file line by line
         while(!feof($file)) {
             ?><p><?php echo fgets($file). ""; ?></p><?php
