@@ -47,11 +47,7 @@ do{
     <div class="Blog_link"><h3><span><?php echo $blog_titles[2]?></span></h3>
     <a href="blogs.php?blog=<?php echo $blog_urls[2] ?>"><img src=<?php echo "blog_img/$blog_imgs[2]"?> alt=<?php echo $blog_imgs[2]?>></a></div>
 
-    <div class="Blog_link"><h3><span><?php echo $blog_titles[3]?></span></h3>
-    <a href="blogs.php?blog=<?php echo $blog_urls[3] ?>"><img src=<?php echo "blog_img/$blog_imgs[3]"?> alt=<?php echo $blog_imgs[3]?>></a></div>
     
-    <div class="Blog_link"><span><h3><?php echo $blog_titles[4]?></span></h3>
-    <a href="blogs.php?blog=<?php echo $blog_urls[4] ?>"><img src=<?php echo "blog_img/$blog_imgs[4]"?> alt=<?php echo $blog_imgs[4]?>></a></div>
 
     </div>
 

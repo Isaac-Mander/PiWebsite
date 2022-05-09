@@ -31,7 +31,7 @@ $login_results = mysqli_fetch_assoc($login_qry);
         <h2>What would you like to do today?</h2></div>
     </div>
     <div class="center_text">
-    <p>Test</p>
+    <p>Hello World</p>
     
 
     </div>
