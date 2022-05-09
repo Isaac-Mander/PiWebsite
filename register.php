@@ -5,14 +5,20 @@ $username = $_GET['USERNAME'];
 $password = $_GET['PASSWORD'];
 $hashed_password = sha1($password,False);
 echo $hashed_password;
-$login_sql = "INSERT INTO users (username,password,status) VALUES ('$username','$hashed_password',NULL)";
-$login_qry = mysqli_query($heroku_db, $login_sql);
+$register_sql = "INSERT INTO users (username,password,status) VALUES ('$username','$hashed_password',NULL);";
+$register_qry = mysqli_query($heroku_db, $register_sql);
+
+//If password correct start session
+session_start();
+//Set session var
+$_SESSION['USERNAME'] = $username;
+$_SESSION['PASSWORD'] = $password;
+
+header('location: profile.php');
 
 
-//After adding user reset id counter
 
-$login_sql = "ALTER TABLE users AUTO_INCREMENT = 1";
-$login_qry = mysqli_query($heroku_db, $login_sql);
+
 ?>
 <!DOCTYPE html>
 <html lang="en">

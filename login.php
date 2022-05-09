@@ -7,6 +7,7 @@ if(isset($_GET['error']))
     }
 }
 else $error_msg = "";
+
 ?>
 
 
