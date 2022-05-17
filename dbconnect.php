@@ -6,6 +6,6 @@
 //Local Server if remote unavailable
 //heroku_db = mysqli_connect('localhost','admin','1234','mainsite');
 
-//Local Server if remote unavailable
+//Laptop server for remote development
 $heroku_db = mysqli_connect('localhost','root','','mainsite');
  ?>

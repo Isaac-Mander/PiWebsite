@@ -32,12 +32,16 @@ do{
   <div class="container">
 
     <?php include("navbar.php"); ?>
+    <div class="welcome">
+    <h1>Welcome to my website</h1>
+    <p>Still in development so some features may be broken and unpolished</p>
+    <img src="general_images/maintenance.png" alt="">
+    </div>
+
+
     <div class="Blogs">
-    <h1>Popular Blogs</h1>
-
-   
+    <h1>Some of my "highly popular" blogs</h1>
     <div class="Blogs_grid">
-
     <div class="Blog_link"><h3><span><?php echo $blog_titles[0]?></span></h3>
     <a href="blogs.php?blog=<?php echo $blog_urls[0] ?>"><img src=<?php echo "blog_img/$blog_imgs[0]"?> alt=<?php echo $blog_imgs[0]?>></a></div>
 
@@ -46,12 +50,23 @@ do{
 
     <div class="Blog_link"><h3><span><?php echo $blog_titles[2]?></span></h3>
     <a href="blogs.php?blog=<?php echo $blog_urls[2] ?>"><img src=<?php echo "blog_img/$blog_imgs[2]"?> alt=<?php echo $blog_imgs[2]?>></a></div>
-
-    
-
     </div>
 
     </div>
+
+    <div class="center_text">
+      <h1>Random questions you may have</h1>
+      <h2>What is DeskPi?</h2>
+      <p>Read the blog post you donkey</p>
+      <h2>Why did you make DeskPi/this website?</h2>
+      <p>Boredom</p>
+      <h2>Where can I find the code you used?</h2>
+      <div class="faq_link"><p><a href="https://github.com/Isaac-Mander/DeskPiMain">DeskPi</a></p>
+      <p><a href="https://github.com/Isaac-Mander/PiWebsite">Website</a></p></div>
+      
+    </div>
+
+
 
     </div>
   </body>

@@ -101,6 +101,21 @@ body
     background-color: var(--clr-tran-20);
 }
 
+.welcome
+{
+    text-align: center;
+    background-color: var(--clr-tran-0);
+}
+.welcome img
+{
+    max-height: 500px;
+}
+
+.faq_link a
+{
+    color: rgb(160, 153, 211);
+}
+
 .Blogs
 {
     text-align: center;
